@@ -1,0 +1,52 @@
+{
+  "id": "thomas-edison-v2",
+  "number": "002",
+  "name": "The Experiments",
+  "description": "Edison's lab, failures, and the method behind the genius.",
+  "topics": ["Science", "Inventors"],
+  "thumbUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/edison-experiments.png",
+  "headerImageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/edison-header.png",
+  "cards": [
+    {
+      "id": "edison-v2-process",
+      "question": "Edison famously said genius is 1% inspiration and 99% perspiration. Which best describes his lab method?",
+      "topic": "Method",
+      "mechanic": {
+        "type": "multipleChoice",
+        "options": [
+          { "id": "v2-a", "text": "Careful theoretical planning before any experiments" },
+          { "id": "v2-b", "text": "Rapid, systematic trial-and-error with large teams" },
+          { "id": "v2-c", "text": "Solo work in complete isolation" },
+          { "id": "v2-d", "text": "Copying ideas from European inventors" }
+        ],
+        "correctIds": ["v2-b"]
+      }
+    },
+    {
+      "id": "edison-v2-filament",
+      "question": "How did Edison find the right filament for the light bulb?",
+      "topic": "Experiments",
+      "mechanic": {
+        "type": "sequence",
+        "items": [
+          { "id": "v2-f1", "text": "Identified the need for a long-lasting, heat-resistant filament" },
+          { "id": "v2-f2", "text": "Tested over 1,000 materials including metals and plant fibers" },
+          { "id": "v2-f3", "text": "Discovered carbonized bamboo lasted over 1,200 hours" },
+          { "id": "v2-f4", "text": "Filed the patent and demonstrated a practical light bulb" }
+        ]
+      }
+    },
+    {
+      "id": "edison-v2-labs",
+      "question": "Match each Edison lab to what it was known for.",
+      "topic": "Labs",
+      "mechanic": {
+        "type": "matching",
+        "pairs": [
+          { "id": "menlo",      "left": "Menlo Park",   "right": "First industrial research lab — light bulb, phonograph" },
+          { "id": "west-orange","left": "West Orange",  "right": "Larger complex — motion pictures, improved phonograph" }
+        ]
+      }
+    }
+  ]
+}

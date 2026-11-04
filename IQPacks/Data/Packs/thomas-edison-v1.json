@@ -1,0 +1,167 @@
+{
+  "id": "thomas-edison-v1",
+  "number": "001",
+  "name": "The Inventions",
+  "description": "The inventor who lit up the world.",
+  "topics": ["Science", "Inventors"],
+  "thumbUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/edison-inventions.png",
+  "headerImageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/edison-header.png",
+  "cards": [
+    {
+      "id": "ev1-q1-imagechoice",
+      "question": "Which of these did Edison help invent or improve? Pick THREE.",
+      "topic": "Inventions",
+      "mechanic": {
+        "type": "imageChoice",
+        "options": [
+          { "id": "q1-bulb",  "label": "Light bulb",     "imageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/ev1-lightbulb.png" },
+          { "id": "q1-phono", "label": "Sound recorder", "imageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/ev1-phonograph.png" },
+          { "id": "q1-movie", "label": "Movie camera",   "imageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/ev1-movie-camera.png" },
+          { "id": "q1-car",   "label": "Early car",      "imageUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/ev1-car.png" }
+        ],
+        "correctIds": ["q1-bulb", "q1-phono", "q1-movie"]
+      }
+    },
+    {
+      "id": "ev1-q2-phonograph",
+      "question": "What could this strange machine do?",
+      "topic": "Sound",
+      "mechanic": {
+        "type": "visualRecognition",
+        "imageIds": ["ev1-phonograph"],
+        "options": [
+          { "id": "q2-music",  "label": "Play music from a disc" },
+          { "id": "q2-record", "label": "Record and play back sounds" },
+          { "id": "q2-power",  "label": "Generate electricity" },
+          { "id": "q2-movies", "label": "Project moving pictures" }
+        ],
+        "correctId": "q2-record",
+        "explanation": "The sound recorder captured your voice onto a cylinder and played it back — the first machine to do that."
+      }
+    },
+    {
+      "id": "ev1-q3-matching",
+      "question": "Match each invention to what it helped people do.",
+      "topic": "Inventions",
+      "mechanic": {
+        "type": "matching",
+        "pairs": [
+          { "id": "m3-bulb",      "left": "Light bulb",     "right": "Light up a room at night" },
+          { "id": "m3-phono",     "left": "Sound recorder", "right": "Record and replay sounds" },
+          { "id": "m3-movie",     "left": "Movie viewer",   "right": "Watch moving pictures" },
+          { "id": "m3-telegraph", "left": "Telegraph",      "right": "Send messages over wires" },
+          { "id": "m3-power",     "left": "Power station",  "right": "Send electricity to homes" }
+        ]
+      }
+    },
+    {
+      "id": "ev1-q4-burnout",
+      "question": "Why did Edison's team keep testing new light bulbs?",
+      "topic": "Experiments",
+      "mechanic": {
+        "type": "multipleChoice",
+        "options": [
+          { "id": "q4-a", "text": "They burned out too quickly" },
+          { "id": "q4-b", "text": "They were too cold" },
+          { "id": "q4-c", "text": "They made music" },
+          { "id": "q4-d", "text": "They were too colorful" }
+        ],
+        "correctIds": ["q4-a"]
+      }
+    },
+    {
+      "id": "ev1-q5-sequence",
+      "question": "Put these steps of an invention test in order.",
+      "topic": "Method",
+      "mechanic": {
+        "type": "sequence",
+        "items": [
+          { "id": "q5-1", "text": "Notice a problem" },
+          { "id": "q5-2", "text": "Try an idea" },
+          { "id": "q5-3", "text": "Check what happened" },
+          { "id": "q5-4", "text": "Improve the idea" }
+        ]
+      }
+    },
+    {
+      "id": "ev1-q6-grouping",
+      "question": "Sort each Edison invention by what it lets you experience.",
+      "topic": "Inventions",
+      "mechanic": {
+        "type": "grouping",
+        "zones": [
+          { "id": "g6-light",  "label": "Light",           "color": "#fbbf24" },
+          { "id": "g6-sound",  "label": "Sound",           "color": "#60a5fa" },
+          { "id": "g6-moving", "label": "Moving pictures", "color": "#a78bfa" }
+        ],
+        "items": [
+          { "id": "g6-bulb",        "label": "Incandescent lamp", "emoji": "💡", "correctGroup": "g6-light" },
+          { "id": "g6-phono",       "label": "Phonograph",        "emoji": "📯", "correctGroup": "g6-sound" },
+          { "id": "g6-kinetoscope", "label": "Kinetoscope",       "emoji": "🎞️", "correctGroup": "g6-moving" },
+          { "id": "g6-microphone",  "label": "Carbon microphone", "emoji": "🎙️", "correctGroup": "g6-sound" }
+        ]
+      }
+    },
+    {
+      "id": "ev1-q7-filament",
+      "question": "What part inside an old light bulb glows to make light?",
+      "topic": "Light bulb",
+      "mechanic": {
+        "type": "multipleChoice",
+        "options": [
+          { "id": "q7-a", "text": "Thin wire (filament)" },
+          { "id": "q7-b", "text": "Glass cover" },
+          { "id": "q7-c", "text": "Metal base" },
+          { "id": "q7-d", "text": "Screw" }
+        ],
+        "correctIds": ["q7-a"],
+        "mediaUrl": "https://lwynbkpmizbymgixrmgt.supabase.co/storage/v1/object/public/pack-images/ev1-lightbulb-filament.png"
+      }
+    },
+    {
+      "id": "ev1-q8-problems",
+      "question": "Match each problem Edison was trying to solve.",
+      "topic": "Invention",
+      "mechanic": {
+        "type": "matching",
+        "pairs": [
+          { "id": "m8-bulb",        "left": "💡 Gas lights were dangerous and could start fires.", "right": "Light bulb" },
+          { "id": "m8-phono",       "left": "🎵 People couldn't listen to music again after it was played.", "right": "Phonograph" },
+          { "id": "m8-kinetoscope", "left": "🎬 People couldn't record things that moved.", "right": "Kinetoscope" },
+          { "id": "m8-telegraph",   "left": "✉️ Only one message could be sent at a time.", "right": "Multiplex telegraph" },
+          { "id": "m8-power",       "left": "⚡ Buildings needed their own machines to make electricity.", "right": "Power station" }
+        ]
+      }
+    },
+    {
+      "id": "ev1-q9-predict",
+      "question": "Your new bulb burns out after one minute. What should you try next?",
+      "topic": "Method",
+      "mechanic": {
+        "type": "multipleChoice",
+        "options": [
+          { "id": "q9-a", "text": "Test a different filament" },
+          { "id": "q9-b", "text": "Give up forever" },
+          { "id": "q9-c", "text": "Paint the glass" },
+          { "id": "q9-d", "text": "Shake the bulb" }
+        ],
+        "correctIds": ["q9-a"]
+      }
+    },
+    {
+      "id": "ev1-q10-system",
+      "question": "What made Edison's electric lighting actually work in homes?",
+      "topic": "Legacy",
+      "mechanic": {
+        "type": "multipleChoice",
+        "options": [
+          { "id": "q10-a", "text": "A whole system of bulbs, wires, and power" },
+          { "id": "q10-b", "text": "One magic bulb" },
+          { "id": "q10-c", "text": "A new kind of candle" },
+          { "id": "q10-d", "text": "A wind-up flashlight" }
+        ],
+        "correctIds": ["q10-a"]
+      }
+    }
+  ]
+}
